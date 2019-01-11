@@ -66,15 +66,7 @@ client.user.setGame(`AlBeRNs  `,"https://www.twitch.tv/dggamingbot")
     }
     });
 
-
-
-client.on('message', message => {
-    if (message.content.startsWith("<@533420300130451472>"))
-    
-    message.reply("بتمنشن ل بوت يا مان .؟ ");
-
  
- 
- 
+
  
 client.login(process.env.BOT_TOKEN);
