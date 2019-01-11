@@ -66,6 +66,8 @@ client.user.setGame(`AlBeRNs  `,"https://www.twitch.tv/dggamingbot")
     }
     });
 
+
+
 client.on('message', message => {
     if (message.content.startsWith("<@533420300130451472>"))
     
