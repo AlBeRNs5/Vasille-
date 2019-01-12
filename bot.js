@@ -66,7 +66,7 @@ client.user.setGame(`AlBeRNs  `,"https://www.twitch.tv/dggamingbot")
     }
     });
 
-lient.on('message', message => {
+client.on('message', message => {
     var prefix = "*";
    
         if (message.author.id === client.user.id) return;
