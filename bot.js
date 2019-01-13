@@ -6,7 +6,7 @@ const prefix = '*'
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`AlBeRNs  `,"https://www.twitch.tv/dggamingbot")
+client.user.setGame(` BY:AlBeRNs  `,"https://www.twitch.tv/dggamingbot")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -68,12 +68,10 @@ client.user.setGame(`AlBeRNs  `,"https://www.twitch.tv/dggamingbot")
     });
 
 
-
-
 client.on('message', message => {
     if (message.content.startsWith("<@533420300130451472>"))
     
-    message.reply("عايز ايه ؟");
+    message.reply("المفروض ارد عليك يعني .؟");
     
       
 
@@ -82,35 +80,14 @@ client.on('message', message => {
 });
 
 
-
-client.on('message', msg => {
-  if (msg.author.bot) return;
-  if (!msg.content.startsWith(prefix)) return;
-  let command = msg.content.split(" ")[0];
-  command = command.slice(prefix.length);
-  let args = msg.content.split(" ").slice(1);
  
-    if(command === "clear") {
-        const emoji = client.emojis.find("name", "wastebasket")
-    let textxt = args.slice(0).join("");
-    if(msg.member.hasPermission("MANAGE_MESSAGES")) {
-    if (textxt == "") {
-        msg.delete().then
-    msg.channel.send("***```Supply A Number ًں‘Œ```***").then(m => m.delete(3000));
-} else {
-    msg.delete().then
-    msg.delete().then
-    msg.channel.bulkDelete(textxt);
-        msg.channel.send("```Cleard: " + textxt + "\n Messages```").then(m => m.delete(3000));
-        }    
-    }
-}
-});
+
+
 
 
 
 client.on('message', message => {
-    if (message.content.startsWith("invite")) {
+    if (message.content.startsWith("inviteserver")) {
  
   message.channel.createInvite({
         thing: true,
@@ -222,7 +199,7 @@ message.channel.sendEmbed(id);
 
 client.on('message', message => {
                  if (!message.channel.guild) return;
-         if(message.content =='.members')
+         if(message.content =='*members')
          var kayan = new Discord.RichEmbed()
          .setThumbnail(message.author.avatarURL)
          .setFooter(message.author.username, message.author.avatarURL)
@@ -286,7 +263,7 @@ if(!message.channel.guild) return;
 });
 
 client.on('message', message => {
-         if(message.content === prefix + "closeroom") {
+         if(message.content === prefix + "cm") {
                              if(!message.channel.guild) return message.reply('** This command only for servers**');
   
      if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' **__ليس لديك صلاحيات__**');
@@ -297,7 +274,7 @@ client.on('message', message => {
                     message.reply("**__تم تقفيل الشات__ :white_check_mark: **")
                 });
                   }
-      if(message.content === prefix + "openroom") {
+      if(message.content === prefix + "om") {
                           if(!message.channel.guild) return message.reply('** This command only for servers**');
   
      if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('**__ليس لديك صلاحيات__**');
@@ -393,6 +370,11 @@ client.on('message', msg => {
     }
 }
 });
+
+
+
+
+
 
 
 
