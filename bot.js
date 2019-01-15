@@ -371,36 +371,6 @@ client.on('message', msg => {
 }
 });
 
-client.on('message', message => {
-    if (message.author.bot) return;
-     if (message.content === prefix + "help") {
-      if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
-     message.channel.send('**تم ارسال رسالة في الخاص**');
-
-
-
-
- message.author.sendMessage(`
- **
-[❖═════ General Commands ═══════❖]
- *bot لمعلومات البوت 
- *kick لاعطاء كيك 
- *bc للتكلم في الخاص للكل . 
- *mute لاعطاء ميوت 
- *unmute لفك الميوت 
- *clear + number = لحذف الكلام ال بالشات ولازم الرقم 
- *cm لقفل الروم ولا يستطيع العضو التكلم 
- *om لفتح الروم .
- *inviteserver ليرسل رساله بالخاص ب رابط السيرفر 
- *members لمعرفه حاله الاعضاء
- *user لرؤيه الحساب من داخل سيرفرك . 
- *avatar لرؤيه صوره حسابك . 
-
-
-قابل للتعديل وخاص ل اداره البوت . 
-
-    }
-});
 
 
 
