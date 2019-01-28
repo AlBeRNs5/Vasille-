@@ -6,7 +6,7 @@ const prefix = '*'
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(` BY:AlBeRNs  `,"https://www.twitch.tv/dggamingbot")
+client.user.setGame(`This Bot For Vasille Roleplay only `,"https://www.twitch.tv/dggamingbot")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
