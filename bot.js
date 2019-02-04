@@ -413,7 +413,7 @@ client.on('guildMemberAdd', Sal => {
     channel.send({embed : embed});
     });
 
-lient.on('message' , message => {
+client.on('message' , message => {
   if (message.author.dark) return;
   if (!message.content.startsWith(prefix)) return;
  
